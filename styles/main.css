@@ -1,0 +1,76 @@
+main{
+    align-self: flex-end;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+}
+
+main div{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+}
+
+main div button {
+    width: 40px;
+    height: 40px;
+
+    background: transparent;
+    border-radius: 100%;
+    border: 1px solid var(--text);
+    transition: opacity 0.4s;
+}
+main div button:disabled {
+    opacity: 0.4;
+}
+
+main div button svg path{
+fill: var(--text);
+}
+
+#member_name {
+    font-size: 150px;
+    letter-spacing: 6px;
+    font-weight: 400;
+
+    color: transparent;
+    font-family: 'Star Guard Italic';
+    padding-right: 10px;
+}
+
+#member_name.potter {
+    background: var(--potter);
+    -webkit-background-clip: text;
+}
+
+#member_name.hermione {
+    background: var(--hermione);
+    -webkit-background-clip: text;
+}
+
+#member_name.rony {
+    background: var(--rony);
+    -webkit-background-clip: text;
+}
+
+#member_name.dobby {
+    background: var(--dobby);
+    -webkit-background-clip: text;
+}
+
+#member_name.dumbledore {
+    background: var(--dumbledore);
+    -webkit-background-clip: text;
+}
+
+#member_name.snape {
+    background: var(--snape);
+    -webkit-background-clip: text;
+}
+#member_name.lord {
+    background: var(--lord);
+    -webkit-background-clip: text;
+}

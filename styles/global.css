@@ -1,0 +1,49 @@
+@import url('./background.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./font.css');
+@import url('./navigation.css');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --text: #EDF1F7;
+
+  --image-shadow: radial-gradient(100% 100% at 50% 1.43%, rgba(22, 21, 21, 0), rgba(22, 21, 21, 0.9) 80%);
+  --potter: linear-gradient(45deg, #ff0000 25%, #fffffe 80%);
+  --hermione: linear-gradient(45deg, #5e2f94 30%, #f7f4f6 85%);
+  --rony: linear-gradient(45deg, #fe7b00 10%, #e9b466 70%);
+  --dobby: linear-gradient(45deg, #03ff29, #ffffff 90%);
+  --dumbledore: linear-gradient(45deg, #3939af, #f4f8ff);
+  --snape: linear-gradient(45deg, #000000 22%, #fffdfd);
+  --lord: linear-gradient(45deg, #ff0000 10%, #000000 100%);
+}
+
+body {
+  overflow: hidden; /* Temporário para debugging */
+  color: var(--text);
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100vh; /* Ajusta o padding */
+
+  overflow: hidden; /* Evita que o conteúdo transborde */
+}
+
+.logo{
+  width: 20%;
+  height: 20vh;
+}
