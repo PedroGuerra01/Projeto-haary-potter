@@ -1,0 +1,40 @@
+/* Contêiner principal */
+.background {
+    z-index: -1;
+    position: relative;
+}
+
+.background::before{
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    background: var(--image-shadow);
+    z-index: 1;
+}
+/* Contêiner das imagens */
+#images {
+    position: absolute;
+    transition: transform 0.8s; /* Animação suave para o movimento */
+    width: 100%;
+    height: 100%; /* Deixa o contêiner 100% da altura visível inicialmente */
+}
+
+#images img {
+    display: block;
+    width: 100%; /* Largura total do contêiner */
+    height: 100vh; /* Altura proporcional à largura */
+    object-fit: cover; /* Preenche sem distorção */
+    object-position: center; /* Centraliza o foco */
+}
+
+@media (max-width: 768px) {
+    #images img {
+        background: black;
+        width: 100%; /* Largura total do contêiner */
+        height: 100vh;/* Permite que a altura se ajuste automaticamente */
+        object-fit: contain; /* Mostra a imagem inteira em telas menores */
+    }
+}
+
